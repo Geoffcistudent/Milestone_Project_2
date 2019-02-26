@@ -1,10 +1,23 @@
-.wrapper{
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", Arial, Helvetica, sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: black;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+ul {
+  list-style-type: circle;
+}
+
+.menu{
   position: relative;
   width:640px;
   margin:0 auto;
 }
 .pad{
-  position: absolute;
+  position: relative;
   top:170px;
   width:640px;
   height: 640px;
@@ -76,19 +89,20 @@
   background: #000;
   border-radius: 125px;
   z-index: 10;
+  text-align: center;
 }
 
 .box {
   margin: 0 auto;
   width: 120px;
-  border: 1px solid white;
+  border: 3px solid white;
   text-align: center;
-  color: black;
+  color: white;
   margin-top: 25px;
   float: left; 
 }
 
 
 .box:active{
-  background-color: black
+  background-color: white
 }
