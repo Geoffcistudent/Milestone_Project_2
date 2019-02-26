@@ -1,0 +1,94 @@
+.wrapper{
+  position: relative;
+  width:640px;
+  margin:0 auto;
+}
+.pad{
+  position: absolute;
+  top:170px;
+  width:640px;
+  height: 640px;
+  z-index:0;
+  background-color: #000;
+  border-radius: 310px;
+}
+
+.button {
+  width: 300px;
+  height: 300px;
+  float: left;
+  z-index: 1;
+  margin: 10px;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+  filter: alpha(opacity=60);
+  opacity: 0.6;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+#green {
+  border-top-left-radius: 300px;
+  background-color: green;
+}
+
+#red {
+  float: left;
+  border-top-right-radius: 300px;
+  background-color: red;
+  clear: right;
+}
+
+#yellow {
+  float: left;
+  border-bottom-left-radius: 300px;
+  background-color: yellow;
+  clear: left;
+}
+
+#blue {
+  float: left;
+  border-bottom-right-radius: 300px;
+  background-color: blue;
+}
+
+#mode:hover {
+  cursor: pointer;
+}
+
+#start:hover {
+  cursor: pointer;
+}
+
+#menu{
+  width: 370px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.circle {
+  position: absolute;
+  top: 195px;
+  left: 195px;
+  width: 250px;
+  height: 250px;
+  background: #000;
+  border-radius: 125px;
+  z-index: 10;
+}
+
+.box {
+  margin: 0 auto;
+  width: 120px;
+  border: 1px solid white;
+  text-align: center;
+  color: black;
+  margin-top: 25px;
+  float: left; 
+}
+
+
+.box:active{
+  background-color: black
+}
