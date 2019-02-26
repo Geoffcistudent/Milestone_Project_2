@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="Content-Language" content="en">
     <link rel="stylesheet" href="assets/css/main.css"  type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet">
@@ -18,9 +17,9 @@
 <body class="w3-black">
   
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+<nav class="sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img src="/assets/images/geoff.jpg" style="width:100%">
+  <img src="/assets/images/geoff.jpg" alt="just me" style="width:100%">
   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
@@ -49,24 +48,25 @@
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Geoff Gibbons.</h1>
-    <p>Could Play Therapy Improve Your Child’s Social Skills?
-Research suggests that old-fashioned childhood games can improve executive function, working memory, and self-control in children with ADHD. 
-Sounds like it’s time for a family game night!.</p>
-    <img src="/assets/images/geoffxl.jpg" alt="boy" class="w3-image" width="992" height="1108">
+    <h2><span class="w3-hide-small">"I've</span> been thinking"</h2>
+    <h3>Could Play Therapy Improve Your Child’s Social Skills?</h3>
+    <h3>Research suggests that old-fashioned childhood games can improve executive function ,working memory, and self-control in children with ADHD</h3> 
+    <h3>Sounds like it’s time for a family game night!.</h3>
+    <img src="/assets/images/geoffxl.jpg" alt="Just me" class="w3-image" width="992" height="1108">
   </header>
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">The Benifits of Memory Games in adults</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>Well, a new review of research found that Memory games can improve memory and mood in older adults who've begun to experience a decline in their mental abilities. 
+    <p>New research found that Memory games can improve memory and mood in older adults who've begun to experience a decline in their mental abilities. 
     The caveat: Most of the research involved supervised group training—which means the games may not be as helpful to folks playing them at home.
 The new review also showed that brain training, even in a group setting, didn't do any good for people already diagnosed with dementia.
 The idea behind brain training is to enhance memory and thinking skills by practicing mentally challenging exercises designed to look and feel like video games. 
     </p>
-    <h2 class="w3-text-light-grey">Memory Games in children</h2>
+    <h2 class="w3-text-light-grey">Memory Games for children</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>Matching and Memory Games in Pre-school:
+    <p>Matching and Memory Games in Pre-school:</p>
     <ul>
       <li>Improve concentration</li>
       <li>Train visual memory</li>
@@ -75,7 +75,7 @@ The idea behind brain training is to enhance memory and thinking skills by pract
       <li>Improve the ability to find similarities and differences in objects</li>
       <li>Help to classify objects that are grouped by similar traits</li>
       <li>Improve vocabulary</li></ul>
-    </p>
+    
     <h2 class="w3-text-light-grey">Memory Games in children with ADHD</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>Could Play Therapy Improve Your Child’s Social Skills? 
@@ -89,24 +89,33 @@ The idea behind brain training is to enhance memory and thinking skills by pract
                 <div class='box' id='show-rounds'>0</div>
                 <div class='box' id='mode'>Mode: Strict</div>
                 <div class='box' id='start'>Start</div>
-      </div>   
+     </div>   
     <div class="pad">
         <div class='button' id='green'>
-            <audio preload="auto" id="sound-green"> <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source></audio>
+            <audio preload="auto" id="sound-green"> <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
         </div>
         <div class='button' id='red'>
-            <audio preload="auto" id="sound-red"><source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source></audio>
+            <audio preload="auto" id="sound-red"><source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
         </div>
         <div class='button' id='yellow'>
-            <audio preload="auto" id="sound-yellow"><source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source></audio>
+            <audio preload="auto" id="sound-yellow"><source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
         </div>
         <div class='button' id='blue'>
-            <audio preload="auto" id="sound-blue"><source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source></audio>
+            <audio preload="auto" id="sound-blue"><source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
         </div>
-        <div class="circle"></div>
+        <div class="circle">
+          <br>
+          <button onclick="myFunction()">Reload page</button>
+            <p>Reload Page</p>
+              <script>
+                function myFunction() {
+                  location.reload();
+                                  }
+              </script>
+        </div>
     </div>
     </div>
-<br><br><br><br>
+<br><br><br><br><br><br>
 
 <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
@@ -114,43 +123,15 @@ The idea behind brain training is to enhance memory and thinking skills by pract
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Mayo, Ireland</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +353 151515</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
     </div><br>
     <p>Lets get in touch. Send me a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
   <!-- End Contact Section -->
   </div>
   
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
 </div>
-
-
-
 <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

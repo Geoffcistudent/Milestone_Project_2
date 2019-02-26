@@ -112,3 +112,5 @@ $("#mode").click(function() {
 $("#start").click(function() {
   playerTurn();
 });
+
+
