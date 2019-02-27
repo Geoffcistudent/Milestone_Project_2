@@ -66,6 +66,7 @@ Other Testing...
 
 Deployment
 
+Created a new GitHub repository https://github.com/Geoffcistudent/Milestone_Project_2
 
 Content
 
